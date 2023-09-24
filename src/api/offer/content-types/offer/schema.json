@@ -28,6 +28,14 @@
     },
     "price": {
       "type": "biginteger"
+    },
+    "typeOfVehicle": {
+      "type": "enumeration",
+      "enum": [
+        "tank",
+        "audi",
+        "bmw"
+      ]
     }
   }
 }
