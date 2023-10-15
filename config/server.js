@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
-  host: env('HOST', '0.0.0.0'),
-  port: env.int('PORT', 1337),
-  url: 'https://api.genialnastrona.pl',
+  host: env('STRAPI_HOST', 'api.genialnastrona.pl'), 
+  port: env.int('STRAPI_PORT', 1337),
+  url: env('STRAPI_URL', 'https://api.genialnastrona.pl'), 
   app: {
     keys: env.array('APP_KEYS'),
   },
